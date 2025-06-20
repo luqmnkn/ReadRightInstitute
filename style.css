@@ -1,5 +1,5 @@
 .body{
-    padding: 0 40px;
+    
 }
 .navbar li  {
   position: relative;
@@ -44,7 +44,7 @@
 }
 @media (max-width:500px) {
   .body{
-    padding: 10px;
+    
   }
   .preHeroSec{
     height: 50vh;
