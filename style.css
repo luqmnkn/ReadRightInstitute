@@ -60,8 +60,8 @@ margin-top: 70px;
 .random-shape {
   
 }
-.hu__hu__ { animation: hu__hu__ infinite 2s ease-in-out }
-@keyframes hu__hu__ {
+.logoAnimation { animation: logoAnimation infinite 2s ease-in-out }
+@keyframes logoAnimation{
     50% { transform: translateY(7px) }
 }
 
@@ -107,10 +107,10 @@ margin-top: 70px;
 }
 .preHeroText h1{
   width: 80%;
-  font-size: 5vw;
+  font-size: 6vw;
 }
 .preHeroText p{
-  font-size: 2.5vw;
+  font-size: 3vw;
 }
 .preHeroImg{
   width: 100%;
