@@ -9,7 +9,9 @@
   transition: color 0.3s ease, letter-spacing 0.3s ease;
   font-weight: 800;
 }
-.logoAnimation { animation: logoAnimation infinite 2s ease-in-out }
+.logoAnimation {
+   animation: logoAnimation infinite 2s ease-in-out
+  }
 .navbar li::after {
   content: '';
   position: absolute;
@@ -29,16 +31,20 @@
 .navbar li:hover::after {
   width: 100%;
 }
+
+.carousel-inner{
+  height: 18vh;
+}
 .preHeroSec{
   height: 90vh;
-  margin-top: 10vh;
+  margin-top: 5vh;
 }
 .preHeroText h1{
   width: 80%;
-  font-size: 6vw;
+  font-size: 5vw;
 }
 .preHeroText p{
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .preHeroLongText h1{
   width: 80%;
@@ -168,7 +174,15 @@
 
 
 
+.custom-hover {
+  transition: all 0.3s ease;
+}
 
+.custom-hover:hover {
+  background-color: white !important;
+  color: black !important;
+  border: 1px solid black;
+}
 
 
 
