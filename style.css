@@ -48,10 +48,10 @@
 }
 .preHeroLongText h1{
   width: 80%;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .preHeroLongText p{
-  font-size: 3vw;
+  font-size: 2.5vw;
 }
 .preHeroImg{
   width: 100%;
@@ -79,10 +79,16 @@
 }
 .preHeroText{
   
-  height: 150px;
-  width: 200px;
+  
   align-items: center;
-  justify-content: center;
+  justify-self: center;
+}
+.preHeroLongText h1{
+  width: 80%;
+  font-size: 5vw;
+}
+.preHeroLongText p{
+  font-size: 3vw;
 }
 
 }
