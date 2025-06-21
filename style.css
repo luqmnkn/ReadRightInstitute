@@ -63,9 +63,14 @@
   .carousel-inner{
     font-size: 3vw;
   }
-  .preHeroSec{
+  .section1{
+    height: 35vh;
+  }
+  .section2{
     height: 40vh;
-    
+  }
+  .section3{
+    height: 45vh;
   }
   .preHeroImg{
 }
