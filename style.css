@@ -1,6 +1,46 @@
-.body{
-    
+body{
+ overflow-x: hidden;   
 }
+
+
+.section1 {
+  position: relative;
+  overflow: hidden;
+   height: 110vh;
+   padding-left: 5vw;
+   padding-right: 5vw;
+   
+}
+
+.bg-video {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  min-width: 100%;
+  min-height: 100%;
+  width: auto;
+  height: auto;
+  transform: translate(-50%, -50%);
+  z-index: -1;
+  object-fit: cover;
+}
+
+.videoText {
+  z-index: 1;
+}
+.section1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 110%;
+  height: 30px; /* adjust fade height */
+  background: linear-gradient(to bottom, rgba(255,255,255,0), #ffffff);
+  z-index: 1;
+}
+
+
+
 .navbar li  {
   position: relative;
   color: black;
@@ -32,8 +72,23 @@
   width: 100%;
 }
 
-.carousel-inner{
-  height: 25vh;
+.videoText{
+  width: 50vw;
+  font-size: 3vw;
+}
+.videoText h1{
+  font-size: 6vw;
+}
+
+.secondcarouselInner{
+  height: 30vh;
+  
+}
+.carousel-item h3{
+  font-size: 10vh;
+}
+.carousel-item p{
+  font-size: 6vh;
 }
 .preHeroSec{
   height: 90vh;
@@ -56,31 +111,73 @@
 .preHeroImg{
   width: 100%;
 }
+
 .card1{
+   height: 35vh;
   background-color: #bdd1d1;
 }
 .card2{
+  height: 35vh;
   background-color: #ede7e1;
 }
 .card3{
+  height: 35vh;
   background-color: #d4d3d0;
 }
+
+.cardsContainer{
+ 
+}
+.oneByOne{
+  height: 30vh;
+  width: 90vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #d6e3e6;
+  border-radius: 10px;
+  margin-top: 10vh;
+}
+.thirdCarouselInner{
+  height: 40vh;
+}
 @media (max-width:500px) {
+  
   .body{
     
   }
   .carousel-inner{
     font-size: 3vw;
   }
-  .section1{
-    height: 35vh;
+  .carousel-item h3{
+  font-size: 5vh;
+}
+.thirdCarouselInner{
+  height: 30vh;
+}
+.carousel-item p{
+  font-size: 3vh;
+}
+.section1{
+    height: 50vh;
+    padding-right: px;
+    padding-left: ;
   }
+  .videoText{
+  width: 60vw;
+  font-size: 5vw;
+}
+.videoText h1{
+  font-size: 7vw;
+}
   .section2{
     height: 40vh;
     padding-top: 0;
+    margin: 0;
   }
   .section3{
-    height: 45vh;
+    height: 40vh;
   }
   .preHeroImg{
 }
@@ -117,58 +214,6 @@
 }
 }
  
-
-
-
-
-
-.card-custom {
-      border: none;
-      border-radius: 15px;
-      overflow: hidden;
-      text-align: center;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-      position: relative;
-    }
-
-    .card-top {
-      padding: 40px 20px 20px;
-      color: white;
-      border-bottom: 4px solid white;
-    }
-
-    .circle-icon {
-      width: 80px;
-      height: 80px;
-      background-color: white;
-      border-radius: 50%;
-      margin: 0 auto;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      margin-top: -40px;
-      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-    }
-
-   
-    .card{
-      height: 200px;
-    }
-    .bg-orange {
-      background: linear-gradient(to right, #f1dbb8, #f3e4b7);
-    }
-
-    .bg-blue {
-      background: linear-gradient(to right, #bbe2f4, #aed4f3);
-    }
-
-    .bg-red {
-      background: linear-gradient(to right, #d5a0a0, #9f85aa);
-    }
-
-    .bg-green {
-      background: linear-gradient(to right, #91af93, #c2d9a8);
-    }
 
 
 
@@ -218,3 +263,22 @@
 @keyframes logoAnimation{
     50% { transform: translateY(7px) }
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
