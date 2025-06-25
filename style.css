@@ -1,10 +1,51 @@
 .body{
- background-color: aquamarine;
 }
 
 section{
-
+ border-radius: 20px;
+ margin-top: 10px;
 }
+
+
+.ReadingSection{
+  background-color: #c9e1f4;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.Rcolour1{
+  background-color: #e7f0f7;
+  width: 80%;
+}
+.Rcolour2{
+  background-color: #e7f0f7;
+  width: 80%;
+}
+
+
+.tajweedSection{
+  background-color:#ad8dbd;
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.Tcolour1{
+   background-color:#cfb8d9;
+}
+.Tcolour2{
+  background-color:#cfb8d9;
+}
+
+
+.countingSection{
+  padding-top: 10vh;
+  padding-bottom: 10vh;
+}
+.Ccolour1{
+ background-color:#91b392;
+}
+.Ccolour2{
+  background-color:#b3c5b3;
+}
+
 .section1 {
   position: relative;
   overflow: hidden;
@@ -105,17 +146,17 @@ section{
 }
 .preHeroText h1{
   width: 80%;
-  font-size: 5vw;
+  font-size: 4vw;
 }
 .preHeroText p{
   font-size: 3vw;
 }
-.preHeroLongText h1{
-  width: 80%;
-  font-size: 4vw; 
+.preHeroLongText h3{
+  
+  font-size: 3vw; 
 }
 .preHeroLongText p{
-  font-size: 2.5vw;
+  font-size: 2vw;
 }
 .preHeroImg{
   width: 100%;
@@ -144,8 +185,6 @@ section{
   box-shadow: 0 12px 25px rgba(0, 0, 0, 1);
 }
 
-
-
 .oneByOne{
   height: 30vh;
   width: 90vw;
@@ -153,14 +192,14 @@ section{
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: #d6e3e6;
   border-radius: 10px;
-  margin-top: 10vh;
 }
 .thirdCarouselInner{
   height: 30vh;
 }
-
+.carouselRadius{
+  border-radius: 30px;
+}
 .reviewsCarousel{
   width: 50%;
 }
@@ -240,10 +279,55 @@ section{
   gap: 3vh;
 }
 .ourValuesHeading{
-    font-size: 9vw;
+  font-size: 9vw;
 
 }
+.ReadingSection{
+  background-color: #c9e1f4;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position:sticky;
+  top: 0;
+  z-index: 1;
+}
+.Rcolour1{
+  background-color: #e7f0f7;
+  width: 100%;
+  padding: 3vw;
+}
+.Rcolour2{
+  background-color: #e7f0f7;
+  width: 100%;
+}
 
+
+.tajweedSection{
+  background-color:#ad8dbd;
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position:sticky;
+  top: -630px;
+  z-index: 2;
+}
+.Tcolour1{
+   background-color:#cfb8d9;
+}
+.Tcolour2{
+  background-color:#cfb8d9;
+}
+.countingSection{
+  padding-top: 5vh;
+  padding-bottom: 5vh;
+  position:sticky;
+  top: 0;
+  z-index: 4;
+}
+.Ccolour1{
+ background-color:#91b392;
+}
+.Ccolour2{
+  background-color:#b3c5b3;
+}
 }
 @media (max-width: 760px) {
   .preHeroText p{
