@@ -1,5 +1,5 @@
 .body{
- 
+ background-color: aquamarine;
 }
 
 section{
@@ -175,6 +175,7 @@ section{
 .thirdCarouselInner{
   height: 30vh;
 }
+
 .carousel-item p{
   font-size: 3vh;
 }
@@ -184,13 +185,20 @@ section{
     padding-left: ;
   }
   .videoText{
-  width: 60vw;
-  font-size: 5vw;
+  width: 70vw;
+  font-size: 6vw;
 }
 .videoText h1{
-  font-size: 7vw;
+  font-size: 9vw;
 }
-
+.videobtn{
+  background-color: transparent;
+  color: white;
+  font-size: 5vw;
+  border: 1px solid white;
+  padding: 15px 30px;
+  border-radius: 10px
+}
   .section2{
     height: 40vh;
     padding-top: 0;
@@ -219,7 +227,9 @@ section{
 .preHeroLongText p{
   font-size: 3vw;
 }
-
+.beginYourJourney{
+  gap: 3vh;
+}
 }
 @media (max-width: 760px) {
   .preHeroText p{
