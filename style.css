@@ -94,10 +94,10 @@ section{
   
 }
 .carouselitem h3{
-  font-size: 10vh;
+  font-size: 5vh;
 }
 .carouselitem p{
-  font-size: 6vh;
+  font-size: 4vh;
 }
 .preHeroSec{
   height: 90vh;
@@ -125,6 +125,12 @@ section{
   height: 70vh;
 }
 
+.beginYourJourneyHeading{
+  font-size: 7vw;
+}
+.ourValuesHeading{
+  font-size: 7vw;
+}
 
 
 .hover-card {
@@ -152,7 +158,7 @@ section{
   margin-top: 10vh;
 }
 .thirdCarouselInner{
-  height: 40vh;
+  height: 30vh;
 }
 
 .reviewsCarousel{
@@ -170,14 +176,14 @@ section{
     font-size: 3vw;
   }
   .carousel-item h3{
-  font-size: 5vh;
+  font-size: 3vh;
 }
 .thirdCarouselInner{
-  height: 30vh;
+  height: 20vh;
 }
 
 .carousel-item p{
-  font-size: 3vh;
+  font-size: 2.5vh;
 }
 .section1{
     height: 70vh;
@@ -227,9 +233,17 @@ section{
 .preHeroLongText p{
   font-size: 3vw;
 }
+.beginYourJourneyHeading{
+  font-size: 9vw;
+}
 .beginYourJourney{
   gap: 3vh;
 }
+.ourValuesHeading{
+    font-size: 9vw;
+
+}
+
 }
 @media (max-width: 760px) {
   .preHeroText p{
