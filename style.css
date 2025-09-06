@@ -226,8 +226,6 @@ section{
 }
 .section1{
     height: 70vh;
-    padding-right: px;
-    padding-left: ;
   }
   .videoText{
   width: 70vw;
@@ -394,6 +392,382 @@ section{
 .logoAnimation { animation: logoAnimation infinite 2s ease-in-out }
 @keyframes logoAnimation{
     50% { transform: translateY(7px) }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* --- Responsive improvements and fixes --- */
+
+@media (max-width: 1200px) {
+  .videoText, .preHeroText h1, .preHeroLongText h3 {
+    font-size: 3vw;
+  }
+  .videoText h1 {
+    font-size: 5vw;
+  }
+  .preHeroText h1 {
+    font-size: 3.5vw;
+  }
+}
+
+@media (max-width: 992px) {
+  .section1 {
+    height: 80vh;
+    padding-left: 2vw;
+    padding-right: 2vw;
+  }
+  .videoText {
+    width: 80vw;
+    font-size: 4vw;
+  }
+  .videoText h1 {
+    font-size: 7vw;
+  }
+  .preHeroText h1 {
+    font-size: 5vw;
+  }
+  .preHeroLongText h3 {
+    font-size: 4vw;
+  }
+  .preHeroLongText p {
+    font-size: 2.5vw;
+  }
+  .reviewsCarousel, .counting {
+    width: 80%;
+  }
+}
+
+@media (max-width: 768px) {
+  .section1 {
+    height: 60vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+  }
+  .videoText {
+    width: 95vw;
+    font-size: 5vw;
+  }
+  .videoText h1 {
+    font-size: 8vw;
+  }
+  .videobtn {
+    font-size: 4vw;
+    padding: 10px 20px;
+  }
+  .preHeroText h1 {
+    font-size: 6vw;
+  }
+  .preHeroText p {
+    font-size: 4vw;
+  }
+  .preHeroLongText h3 {
+    font-size: 5vw;
+  }
+  .preHeroLongText p {
+    font-size: 3vw;
+  }
+  .beginYourJourneyHeading, .ourValuesHeading {
+    font-size: 8vw;
+  }
+  .reviewsCarousel, .counting {
+    width: 100%;
+  }
+  .oneByOne {
+    width: 100vw;
+    height: auto;
+    padding: 2vh 0;
+  }
+}
+
+@media (max-width: 576px) {
+  .section1 {
+    height: 50vh;
+  }
+  .videoText {
+    font-size: 6vw;
+    width: 100vw;
+  }
+  .videoText h1 {
+    font-size: 10vw;
+  }
+  .videobtn {
+    font-size: 5vw;
+    padding: 8px 16px;
+  }
+  .preHeroText h1 {
+    font-size: 8vw;
+  }
+  .preHeroText p {
+    font-size: 5vw;
+  }
+  .preHeroLongText h3 {
+    font-size: 7vw;
+  }
+  .preHeroLongText p {
+    font-size: 4vw;
+  }
+  .beginYourJourneyHeading, .ourValuesHeading {
+    font-size: 10vw;
+  }
+  .navbar .button {
+    display: none !important;
+  }
+  .reviewsCarousel, .counting {
+    width: 100%;
+  }
+  .oneByOne {
+    width: 100vw;
+    height: auto;
+    padding: 2vh 0;
+  }
+}
+
+@media (max-width: 400px) {
+  .section1 {
+    height: 40vh;
+  }
+  .videoText {
+    font-size: 7vw;
+  }
+  .videoText h1 {
+    font-size: 12vw;
+  }
+  .videobtn {
+    font-size: 6vw;
+    padding: 6px 12px;
+  }
+  .preHeroText h1 {
+    font-size: 10vw;
+  }
+  .preHeroText p {
+    font-size: 6vw;
+  }
+  .preHeroLongText h3 {
+    font-size: 9vw;
+  }
+  .preHeroLongText p {
+    font-size: 5vw;
+  }
+  .beginYourJourneyHeading, .ourValuesHeading {
+    font-size: 12vw;
+  }
+}
+
+/* Fix incomplete CSS in existing queries */
+@media (max-width:500px) {
+  .section1{
+    height: 50vh;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
+}
+
+/* --- Make images and videos responsive --- */
+img, video, .bg-video {
+  max-width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+/* --- Responsive footer --- */
+footer .row > div {
+  margin-bottom: 1rem;
+}
+@media (max-width: 576px) {
+  footer .row {
+    flex-direction: column;
+    text-align: center;
+  }
+  footer .row > div {
+    margin-bottom: 1.5rem;
+  }
+}
+
+/* --- Responsive navbar tweaks --- */
+@media (max-width: 992px) {
+  .navbar .button {
+    display: none !important;
+  }
+}
+
+/* --- Responsive carousel controls --- */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+  width: 2rem;
+  height: 2rem;
+}
+
+/* --- Ensure all sections have padding/margin for mobile --- */
+@media (max-width: 576px) {
+  section, .container {
+    padding-left: 0.5rem !important;
+    padding-right: 0.5rem !important;
+  }
+}
+
+/* --- Responsive card grid spacing --- */
+@media (max-width: 768px) {
+  .beginYourJourney .col-lg-3, .beginYourJourney .col-md-6, .beginYourJourney .col-sm-12 {
+    margin-bottom: 1rem;
+  }
+}
+
+/* --- Responsive oneByOne section --- */
+@media (max-width: 768px) {
+  .oneByOne {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+  }
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* --- Navbar Visual Upgrade --- */
+
+/* --- Force custom navbar styles to override Bootstrap --- */
+
+/* --- Stronger Navbar Blur and Premium Button Gradient --- */
+
+/* --- Navbar Centered, White, and Friendly Button --- */
+
+/* --- REVERT: Navbar back to blurred, dark, modern look --- */
+
+/* --- Navbar Centering, Padding, and Light Button --- */
+
+.navbar {
+  position: sticky !important;
+  top: 0 !important;
+  z-index: 1000 !important;
+  background: rgba(255,255,255,0.65) !important; /* semi-transparent white */
+  backdrop-filter: blur(18px) saturate(160%) !important;
+  -webkit-backdrop-filter: blur(18px) saturate(160%) !important;
+  box-shadow: 0 4px 24px rgba(34,40,49,0.10) !important;
+  border-radius: 0 0 18px 18px !important;
+  padding-left: 50px !important;
+  padding-right: 50px !important;
+  padding-top: 0.5rem !important;
+  padding-bottom: 0.5rem !important;
+  margin-left: 0 !important;
+  margin-right: 0 !important;
+  width: 100%;
+  max-width: 1400px;
+  margin: 0 auto !important;
+  transition: background 0.3s, box-shadow 0.3s !important;
+}
+
+@media (max-width: 900px) {
+  .navbar {
+    padding-left: 20px !important;
+    padding-right: 20px !important;
+    max-width: 100vw;
+  }
+}
+@media (max-width: 600px) {
+  .navbar {
+    padding-left: 6px !important;
+    padding-right: 6px !important;
+    border-radius: 0 0 10px 10px !important;
+  }
+}
+
+.navbar .navbar-brand img {
+  height: 44px !important;
+  width: auto !important;
+  transition: transform 0.2s !important;
+}
+
+.navbar .button .btn {
+  background: linear-gradient(90deg, #b6e0fe 0%, #89f0e4 100%) !important;
+  color: #2264a6 !important;
+  font-weight: 700 !important;
+  border: none !important;
+  border-radius: 10px !important;
+  padding: 0.5rem 1.4rem !important;
+  font-size: 1rem !important;
+  letter-spacing: 0.2px !important;
+  box-shadow: 0 2px 8px rgba(182,224,254,0.10) !important;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s, transform 0.18s !important;
+  outline: none !important;
+  margin-left: 10px;
+}
+
+.navbar .button .btn:hover, .navbar .button .btn:focus {
+  background: linear-gradient(90deg, #89f0e4 0%, #b6e0fe 100%) !important;
+  color: #2264a6 !important;
+  box-shadow: 0 4px 16px rgba(182,224,254,0.18) !important;
+  transform: scale(1.04) !important;
+}
+
+.navbar .nav-link {
+  color: #222 !important;
+  font-weight: 600 !important;
+  font-size: 1.1rem !important;
+  padding: 0.5rem 1.2rem !important;
+  border-radius: 8px !important;
+  transition: background 0.2s, color 0.2s, box-shadow 0.2s !important;
+  position: relative !important;
+}
+
+.navbar .nav-link.active, .navbar .nav-link:focus, .navbar .nav-link:hover {
+  background: #eaf6fb !important;
+  color: #2264a6 !important;
+  box-shadow: 0 2px 8px rgba(182,224,254,0.08) !important;
+  text-decoration: none !important;
+}
+
+.navbar .nav-link::after {
+  content: '' !important;
+  display: block !important;
+  margin: 0 auto !important;
+  width: 0% !important;
+  height: 2px !important;
+  background: #b6e0fe !important;
+  border-radius: 2px !important;
+  transition: width 0.3s !important;
+}
+
+.navbar .nav-link:hover::after, .navbar .nav-link.active::after {
+  width: 60% !important;
+}
+
+/* --- Hero Section Video Margin Fix --- */
+.section1 {
+  /* Remove margin-top: 70px; */
+}
+@media (max-width: 600px) {
+  .section1 {
+    /* Remove margin-top: 56px; */
+  }
+}
+
+/* --- Fix linter error for padding in 500px media query --- */
+@media (max-width:500px) {
+  .section1{
+    height: 50vh;
+    padding-right: 0 !important;
+    padding-left: 0 !important;
+  }
 }
 
 

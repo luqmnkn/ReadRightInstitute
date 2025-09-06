@@ -64,6 +64,58 @@
       background: linear-gradient(to right, #91af93, #c2d9a8);
     }
 
+    /* Responsive styles for Tajweed cards */
+    @media (max-width: 992px) {
+      .card-custom {
+        margin-bottom: 1.5rem;
+      }
+      .card {
+        height: auto;
+      }
+    }
+    @media (max-width: 768px) {
+      .row {
+        flex-direction: column;
+        align-items: center;
+      }
+      .card-custom {
+        width: 90vw;
+        margin: 0 auto 1.5rem auto;
+      }
+      .card {
+        height: auto;
+      }
+      .circle-icon {
+        width: 60px;
+        height: 60px;
+        margin-top: -30px;
+      }
+      .card-title, .card-top, .p-3, .card-text {
+        font-size: 1rem;
+      }
+    }
+    @media (max-width: 576px) {
+      .container {
+        padding-left: 0.5rem;
+        padding-right: 0.5rem;
+      }
+      .card-custom {
+        width: 100vw;
+      }
+      .card-title, .card-top, .p-3, .card-text {
+        font-size: 0.95rem;
+      }
+      .circle-icon {
+        width: 48px;
+        height: 48px;
+        margin-top: -24px;
+      }
+      button.btn {
+        width: 100%;
+        font-size: 1.1rem;
+        padding: 12px 0;
+      }
+    }
 
 </style>
 <body>

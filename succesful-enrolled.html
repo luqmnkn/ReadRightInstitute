@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Enrollment Success</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(135deg, #d1f2eb, #fce4ec);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+
+    .success-card {
+      background: white;
+      padding: 40px 35px;
+      border-radius: 20px;
+      box-shadow: 0 8px 25px rgba(0,0,0,0.15);
+      text-align: center;
+      max-width: 700px;
+      animation: fadeIn 1s ease;
+    }
+
+    .success-card h1 {
+      color: #2e7d32;
+      margin-bottom: 20px;
+      font-size: 32px;
+    }
+
+    .ayah-arabic {
+      font-size: 30px;
+      font-weight: bold;
+      color: #004d40;
+      line-height: 1.7;
+      margin-bottom: 20px;
+    }
+
+    .ayah-translation {
+      font-size: 18px;
+      color: #444;
+      margin-bottom: 15px;
+      font-style: italic;
+    }
+
+    .ayah-ref {
+      font-size: 15px;
+      color: #777;
+    }
+
+    @keyframes fadeIn {
+      from { opacity: 0; transform: translateY(20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+  </style>
+</head>
+<body>
+  <div class="success-card">
+    <h1>✅ Successfully Enrolled</h1>
+    <div class="ayah-arabic">
+     اقْرَأْ بِاسْمِ رَبِّكَ الَّذِي خَلَقَ
+    </div>
+    <div class="ayah-translation">
+      “Recite in the name of your Lord who created.”
+    </div>
+    <div class="ayah-ref">
+      — Surah Al-‘Alaq (96:1)
+    </div>
+  </div>
+</body>
+</html>
